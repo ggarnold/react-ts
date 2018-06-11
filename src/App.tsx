@@ -1,15 +1,14 @@
 import * as React from 'react';
 import './App.css';
-import EasyLink from './components/EasyLink'
 import SessionLinks from './components/SessionLinks'
-import { AuthService } from './services/AuthService'
+// import { AuthService } from './services/AuthService'
 
 import logo from './logo.svg';
 
 class App extends React.Component {
   public render() {
 
-    const userName = new AuthService("Gregory").getName();
+    // const userName = new AuthService("Gregory").getName();
 
     return (
       <div className="App">
@@ -20,9 +19,6 @@ class App extends React.Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          <EasyLink name={userName} />
         </p>
       </div>
     );
